@@ -1,10 +1,9 @@
 #include <GL/glut.h>
 
-// Inicialização
 void init(void) {
-    glClearColor(1.0, 1.0, 1.0, 0.0); // Fundo preto
+    glClearColor(1.0, 1.0, 1.0, 0.0); // Fundo branco
     glMatrixMode(GL_PROJECTION);
-    gluOrtho2D(0.0, 300.0, 0.0, 200.0); // Área de desenho
+    gluOrtho2D(0.0, 300.0, 0.0, 200.0);
 }
 
 // Desenho do triangulo
@@ -63,7 +62,7 @@ void display(void) {
 int main(int argc, char** argv) {
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
-    glutInitWindowSize(400, 300); // Tamanho da janela
+    glutInitWindowSize(400, 300);
     glutInitWindowPosition(200, 200);
     glutCreateWindow("Boneco palito - OpenGL");
 
